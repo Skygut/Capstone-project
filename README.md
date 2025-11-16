@@ -39,6 +39,11 @@ project/
 git clone https://github.com/<your-username>/<your-repo>.git
 cd <your-repo>
 ``` 
+### Встановити залежності
+якщо використовуєш Jupyter:
+```
+pip install notebook
+```
 
 ### Налаштування Kaggle API
 
@@ -64,19 +69,27 @@ unzip rossmann-store-sales.zip -d data/
 data/train.csv
 data/store.csv
 ```
-### Запуск прогнозування
-Запуск: ```python main.py ```
-Скрипт виконує:
-завантаження та об’єднання датасетів
+### Запуск ноутбука
+Відкрий ноутбук: ```jupyter notebook main.ipynb ```
 
-очищення даних
-feature engineering
-тренування моделей ML
-оптимізацію гіперпараметрів
-створення ансамблю
-оцінку метрик
-побудову графіків
-SHAP-аналіз важливості ознак
+або через VS Code:
+Відкрити репозиторій у VS Code
+дкрити файл main.ipynb
+Запустити комірки по черзі
+
+### Що робить ноутбук
+В ``` main.ipynb ``` виконується:
+- завантаження даних
+- очищення та обробка пропусків
+- створення ознак (feature engineering)
+- тренування моделей:
+  - RandomForest
+  - XGBoost
+  - CatBoost
+- побудова ансамблю
+- оцінка метрик
+- генерація графіків
+- виконання SHAP-аналізу
 
 Результати зберігаються у папках:
 ```
@@ -110,7 +123,7 @@ results/models/
 2. Завантажити дані
 3. Запустити:
 ```
-python main.py
+jupyter notebook main.ipynb
 ```
 ### Ліцензія
 Проєкт розповсюджується під ліцензією MIT License.
