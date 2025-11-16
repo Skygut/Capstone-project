@@ -91,13 +91,6 @@ data/store.csv
 - генерація графіків
 - виконання SHAP-аналізу
 
-Результати зберігаються у папках:
-```
-results/metrics/
-results/plots/
-results/shap/
-results/models/ 
-```
 
 ###  Результати
 
