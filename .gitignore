@@ -2,7 +2,7 @@
 __pycache__/
 *.py[codz]
 *$py.class
-
+.DS_Store
 # C extensions
 *.so
 
@@ -51,7 +51,7 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
-
+.DS_Store
 # Translations
 *.mo
 *.pot
@@ -206,3 +206,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+.DS_Store
